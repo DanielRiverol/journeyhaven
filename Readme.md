@@ -12,7 +12,7 @@ Bienvenidos a la cursada de programación. A continuación, encontrarás un índ
   - [Introducción al modelo cliente-servidor](#introducción-al-modelo-cliente-servidor)
   - [Introducción al desarrollo web](#introducción-al-desarrollo-web)
   - [Introducción al lenguaje HTML](#introducción-al-lenguaje-html)
-  - [HTML avanzado](#html-avanzado)
+  <!-- - [HTML avanzado](#html-avanzado)
   - [Introducción al lenguaje CSS](#introducción-al-lenguaje-css)
   - [CSS avanzado](#css-avanzado)
   - [Introducción a Bootstrap](#introducción-a-bootstrap)
@@ -24,76 +24,97 @@ Bienvenidos a la cursada de programación. A continuación, encontrarás un índ
   - [Math y Date](#math-y-date)
   - [Introducción al DOM](#introducción-al-dom)
   - [Sintaxis avanzada](#sintaxis-avanzada)
-  - [AJAX, asincronía y promesas](#ajax-asincronía-y-promesas)
+  - [AJAX, asincronía y promesas](#ajax-asincronía-y-promesas) -->
 
 ## Introducción al diseño UX/UI
 
 Descripción general del diseño UX/UI y su importancia en el desarrollo de interfaces de usuario efectivas.
 
+[Material complementario](https://github.com/DanielRiverol/journeyhaven/blob/clases/materiales/01%20-%20Introducci%C3%B3n%20al%20Dise%C3%B1o%20UX_UI.pdf)
+
 ## Introducción al modelo cliente-servidor
 
 Conceptos básicos del modelo cliente-servidor y cómo funciona en la web moderna.
+
+[Material complementario](https://github.com/DanielRiverol/journeyhaven/blob/clases/materiales/02-%20Introducci%C3%B3n%20al%20Modelo%20Cliente_Servidor.pdf)
 
 ## Introducción al desarrollo web
 
 Panorama general del desarrollo web y las tecnologías fundamentales involucradas.
 
+[Material complementario](https://github.com/DanielRiverol/journeyhaven/blob/clases/materiales/03-%20Introducci%C3%B3n%20al%20Desarrollo%20Web.pdf)
+
 ## Introducción al lenguaje HTML
 
 Fundamentos del lenguaje HTML, estructura de documentos y etiquetas principales.
 
-## HTML avanzado
+[Material complementario](https://github.com/DanielRiverol/journeyhaven/blob/clases/materiales/04-%20Introducci%C3%B3n%20al%20Lenguaje%20HTML.pdf)
+
+<!-- ## HTML avanzado
 
 Temas avanzados de HTML, incluyendo formularios, multimedia y accesibilidad.
+[Material complementario]()
+ -->
 
-## Introducción al lenguaje CSS
+<!-- ## Introducción al lenguaje CSS
 
 Conceptos básicos del CSS y cómo estilizar páginas web.
+[Material complementario]() -->
 
-## CSS avanzado
+<!-- ## CSS avanzado
 
 Técnicas avanzadas de CSS, como diseño responsive, animaciones y preprocesadores.
+[Material complementario]() -->
 
-## Introducción a Bootstrap
+<!-- ## Introducción a Bootstrap
 
 Uso de Bootstrap para el diseño y desarrollo de interfaces web responsivas.
+[Material complementario]() -->
 
-## Introducción a JavaScript
+<!-- ## Introducción a JavaScript
 
 Conceptos básicos de JavaScript, sintaxis y cómo hacer que las páginas web sean interactivas.
+[Material complementario]() -->
 
-## Condicionales y bucles
+<!-- ## Condicionales y bucles
 
 Uso de estructuras de control en JavaScript para manejar lógica y repetir tareas.
+[Material complementario]() -->
 
-## Funciones
+<!-- ## Funciones
 
 Definición y uso de funciones en JavaScript para modularizar el código.
+[Material complementario]() -->
 
-## Arrays y objetos
+<!-- ## Arrays y objetos
 
 Trabajar con estructuras de datos en JavaScript: arrays y objetos.
+[Material complementario]() -->
 
-## Funciones de orden superior
+<!-- ## Funciones de orden superior
 
 Funciones que toman otras funciones como argumentos o devuelven funciones.
+[Material complementario]() -->
 
-## Math y Date
+<!-- ## Math y Date
 
 Uso de los objetos Math y Date en JavaScript para manejar cálculos matemáticos y fechas.
+[Material complementario]() -->
 
-## Introducción al DOM
+<!-- ## Introducción al DOM
 
 Manipulación del Document Object Model (DOM) para interactuar con el contenido web.
+[Material complementario]() -->
 
-## Sintaxis avanzada
+<!-- ## Sintaxis avanzada
 
 Conceptos avanzados de la sintaxis de JavaScript, incluyendo desestructuración y spread/rest.
+[Material complementario]() -->
 
-## AJAX, asincronía y promesas
+<!-- ## AJAX, asincronía y promesas
 
 Uso de AJAX, asincronía y promesas para realizar solicitudes asíncronas y manejar operaciones en segundo plano.
-
+[Material complementario]() -->
 ---
 
 
