@@ -42,14 +42,17 @@ Conceptos básicos del modelo cliente-servidor y cómo funciona en la web modern
 
 Panorama general del desarrollo web y las tecnologías fundamentales involucradas.
 
-[Material complementario](https://github.com/DanielRiverol/journeyhaven/blob/clases/materiales/03-%20Introducci%C3%B3n%20al%20Desarrollo%20Web.pdf)
+[Material complementario](https://github.com/DanielRiverol/journeyhaven/blob/clases/materiales/03-%20Introducci%C3%B3n%20al%20Desarrollo%20Web.pdf) \
+[Código Ejemplo](https://github.com/DanielRiverol/journeyhaven/tree/clases/clase_2)
+
 
 ## Introducción al lenguaje HTML
 
 Fundamentos del lenguaje HTML, estructura de documentos y etiquetas principales.
 
 [Material complementario](https://github.com/DanielRiverol/journeyhaven/blob/clases/materiales/04-%20Introducci%C3%B3n%20al%20Lenguaje%20HTML.pdf)
-
+\
+[Código Ejemplo](https://github.com/DanielRiverol/journeyhaven/tree/clases/clase_3)
 <!-- ## HTML avanzado
 
 Temas avanzados de HTML, incluyendo formularios, multimedia y accesibilidad.
