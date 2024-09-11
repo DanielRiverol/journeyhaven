@@ -1,0 +1,52 @@
+/* Ajustes generales */
+/* 
+!important => ancho de espada si tenes mas de tres important replantea los estilos
+selec id= > ancho basto
+selec clase= > son los 7 
+selec etiqueta= > son el resto
+*/
+/* Para hacer
+    - Buscar fuente copada
+*/
+body {
+  font-family: Arial, sans-serif;
+
+  background-image: url("../assets/img/playa_noche.jpg");
+  color: white;
+}
+/* selector de etiqueta */
+a {
+  /* color: black; */
+  color: #fafafa;
+}
+div {
+  background: red;
+}
+
+/* selector de clase */
+.tablas {
+  background-color: cadetblue;
+}
+
+/* Tablas */
+
+/*  selector id */
+#tabla-ingredientes {
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: springgreen;
+  color: #4c8cf1;
+}
+
+.primeros {
+  color: #9d71d7;
+}
+ .tablas table{
+        border: 12px solid blue ;
+
+
+ }
+/* Titulos */
+h1 {
+  background-color: rgb(141, 22, 79);
+}

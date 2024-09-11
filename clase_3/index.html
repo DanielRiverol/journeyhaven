@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <link rel="stylesheet" href="" />
-    <title>Home</title>
+    <title>Clase 3</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <style>
+      h1{
+        background-color: rgb(219, 219, 27);
+      }
+    </style> -->
   </head>
+
   <body class="cuerpo">
      <div class="nav" id="arriba">
       <ul>
@@ -25,12 +33,13 @@
 
     <!-- seccion receta -->
     <div>
+      <!-- <h1 style="background-color: blueviolet;">Receta: Sándwich de Milanesa</h1> -->
       <h1>Receta: Sándwich de Milanesa</h1>
-
+      
       <h2>Ingredientes</h2>
-      <ul>
-        <li>4 milanesas de carne (vacuna o pollo)</li>
-        <li>Pan para sándwich</li>
+      <ul id="lista-ingredientes">
+        <li class="primeros">4 milanesas de carne (vacuna o pollo)</li>
+        <li class="primeros">Pan para sándwich</li>
         <li>1 huevo</li>
         <li>1 taza de pan rallado</li>
         <li>Harina para empanizar</li>
@@ -41,8 +50,8 @@
 
       <h2>Instrucciones</h2>
       <ol>
-        <li>Condimenta las milanesas con sal y pimienta.</li>
-        <li>
+        <li class="primeros">Condimenta las milanesas con sal y pimienta.</li>
+        <li class="primeros">
           Pasa cada milanesa por harina, luego por huevo batido y finalmente por
           pan rallado.
         </li>
@@ -51,6 +60,63 @@
           Coloca las milanesas en el pan y agrega los condimentos al gusto.
         </li>
       </ol>
+    </div>
+
+    <span>Hola! Soy un elemento de texto en linea1</span>
+    <span>Hola! Soy un elemento de texto en linea2</span>
+    <span>Hola! Soy un elemento de texto en linea3</span>
+
+    <div class="tablas">
+      <table id="tabla-ingredientes">
+          <tr>
+            <th>Ingredientes</th>
+            <th>Cantidad</th>
+            <th>Tipo</th>
+          </tr>
+
+          <tr>
+            <td>Milanesas</td>
+            <td>4</td>
+            <td>Carne</td>
+          </tr>
+
+          <tr>
+            <td>Pan</td>
+            <td>1</td>
+            <td>Integral</td>
+          </tr>
+
+          <tr>
+            <td>Huevos</td>
+            <td>1</td>
+            <td>Avestruz</td>
+          </tr>
+
+          <tr>
+            <td>Pan rallado</td>
+            <td>1 Taza</td>
+            <td>Integral</td>
+          </tr>
+      </table>
+
+
+      <table id="tabla-pasos">
+        <tr>
+          <th>Primer paso</th>
+          <th>Segundo paso</th>
+          <th>Tercer paso</th>
+          <th>Cuarto paso</th>
+        </tr>
+
+        <tr>
+          <td>Condimentar</td>
+          <td>Empanar</td>
+          <td>Freir</td>
+          <td>Condimentar</td>
+        </tr>
+
+      </table>
+
     </div>
 
     <!-- Pie de pagina -->
