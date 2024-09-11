@@ -1,3 +1,115 @@
-body{
-    background-color: rgb(220, 238, 245);
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* cascada */
+body {
+  background-color: burlywood;
+  font-family: "Arial", sans-serif;
+}
+body {
+  background-color: #fafafa;
+}
+/* precedencia */
+/* #titulo{
+    color: green;
+
+}
+.principal{
+    color: blue;
+} */
+h1 {
+  position: relative;
+  left: 140px;
+  right: 0;
+  /* top: 60px; */
+  bottom: 0;
+  background-color: rgb(187, 0, 255);
+  text-align: center;
+  margin: 10px;
+  font-size: 35px;
+  color: #333 !important;
+  width: 500px;
+}
+/* especificidad */
+section {
+  width: 100%;
+  margin-top: 5px;
+  background-color: darksalmon;
+  padding: 20px;
+}
+section.container {
+  background-color: rgb(205, 199, 204);
+}
+
+/* section.container.border-1{
+   border: 11.5px dotted red;
+
+}
+.border-1{
+   border: 1.5px dotted rgb(128, 0, 255);
+} */
+/* .container{
+
+
+    
+    background-color: rgb(9, 96, 172);
+} */
+.box {
+  background-color: rgb(50, 168, 204);
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+.block {
+  display: block;
+  background-color: rgb(30, 255, 68);
+  width: 240px;
+  height: 50px;
+  /* margin: 15px 25px 45px 120px; */
+
+  /* padding: 10px 20px 5px 30px; */
+  padding: 5px 10px;
+  border: 2px solid;
+
+  /* border-top:5px dotted;
+    border-bottom:15px dotted; */
+}
+.block-1 {
+  /* position: fixed; */
+  top: 200px;
+  left: 240px;
+}
+.inline {
+  display: inline;
+  padding: 5px;
+}
+
+.inline-block {
+  padding: 10px;
+  margin: 4px;
+}
+
+nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: rgb(30, 180, 210);
+  height: 60px;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+/* position static , relative, absolute , fixed, sticky */
+a.arriba {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  padding: 8px;
+  background-color: green;
 }
