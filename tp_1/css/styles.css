@@ -1,0 +1,155 @@
+/* Estilos generales */
+/* ======= medidas relativas =========
+
+font-size: 16px
+Porcentajes
+vw, vh, dvw, dvh
+em , rem
+*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  background-color: #e0e0e0;
+  color: #222;
+}
+section,
+footer {
+  padding: 20px;
+  /* height: 200px; */
+}
+footer {
+  height: 60px;
+  background-color: #222;
+}
+/* no duplicar codigo */
+footer span {
+  color: #f3f5f5;
+}
+footer span a {
+  color: #f3f5f5;
+}
+h2 {
+
+  padding: 1rem 0;
+}
+
+.wrapper {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+header {
+  background-color: #00bcd4;
+  color: #f4f2f2;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 4rem;
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #222;
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+}
+.navbar ul {
+    width: 30%;
+    display: flex;
+    /* background-color: #e0e0e0; */
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+  width: auto;
+  color: #f3f5f5;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* galeria  principal */
+.galeria div img {
+  width: 40%;
+  
+  border-radius: .5rem;
+}
+
+/* galeria */
+.galeria {
+  margin: 0 auto;
+  width: 90%;
+  /* height: 100%; */
+  background-color: #9d9a9a;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* overflow: scroll; */
+}
+.galeria div {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-gap: 20px;
+  row-gap: 20px;
+  gap: 15px;
+}
+
+/* =========nosotros ========== */
+.video {
+  width: 100%;
+}
+
+/* ========== media queries ========= */
+
+/* 
+max y min => prestar atención al orden 
+min  < a >
+max > a <
+*/
+@media (max-width: 1024px) {
+  /* reglas nuevas o sobreescritas */
+  h1 {
+    font-size: 2.9999999rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    background-color: #5b5b5b;
+  }
+  .galeria div {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .galeria div img {
+    width: 100%;
+  }
+}
+@media (max-width: 574px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .navbar {
+    justify-content: center;
+  }
+  .navbar ul {
+    width: 90%;
+  }
+}
