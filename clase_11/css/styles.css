@@ -9,3 +9,10 @@ h1{
     padding: 10px;
     font-weight: 500;
 }
+.meme{
+    border: 2px solid;
+    height: 350px;
+    width: 550px;
+    background-color: cornsilk;
+    object-fit: cover;
+}

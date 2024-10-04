@@ -89,3 +89,15 @@ luigi.restarVida(1);
 console.log(luigi.vida);
 mario.restarVida(1);
 console.log(mario.vida);
+
+const cajaMeme= document.querySelector('div.meme')
+
+cajaMeme.addEventListener('mouseenter', ()=>{
+    cajaMeme.style.backgroundImage= 'url(./img/estados.jpg)'
+})
+cajaMeme.addEventListener('mouseleave', ()=>{
+    cajaMeme.style.backgroundImage= 'url(./img/australia.jpg)'
+})
+cajaMeme.addEventListener('click', ()=>{
+    cajaMeme.style.backgroundImage= 'url(./img/pum.png)'
+})
