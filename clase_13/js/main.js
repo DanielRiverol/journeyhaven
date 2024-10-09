@@ -59,7 +59,7 @@ function filtrarServicio(arr, filtro) {
 
 // Función para crear estructura html
 function crearHtml(arr) {
-// validar si arr no es un array
+  // validar si arr no es un array
   contenedor.innerHTML = "";
 
   let html;
@@ -78,7 +78,7 @@ function crearHtml(arr) {
   }
 }
 
-paises.push("Nigeria")
+paises.push("Nigeria");
 
 for (const pais of paises) {
   const li = document.createElement("li");
@@ -86,39 +86,58 @@ for (const pais of paises) {
 
   listado.appendChild(li);
 }
-crearHtml(servicios)
-const buscar= inputs[4]
+crearHtml(servicios);
+const buscar = inputs[4];
 
-buscar.addEventListener('keyup', ()=>{
+buscar.addEventListener("keyup", () => {
   console.log(buscar.value);
-  const filtrados= filtrarServicio(servicios, buscar.value)
+  const filtrados = filtrarServicio(servicios, buscar.value);
 
   console.log(filtrados);
-  crearHtml(filtrados)
-  
-})
+  crearHtml(filtrados);
+});
 
 //almacenamiento local 5 y 10 MB
 
 //guardar informacion
-localStorage.setItem("saludo", "Hola tarola")
-localStorage.setItem('dark-mode', true)
-localStorage.setItem("edad", 41)
+localStorage.setItem("saludo", "Hola tarola");
+localStorage.setItem("dark-mode", true);
+localStorage.setItem("edad", 41);
 //ver informacion
-const saludo= localStorage.getItem("saludo")
-const darkMode= localStorage.getItem("dark-mode")  === "true"
+const saludo = localStorage.getItem("saludo");
+const darkMode = localStorage.getItem("dark-mode") === "true";
 const edad = Number(localStorage.getItem("edad"));
 // console.log(saludo);
 // console.log(darkMode);
 // console.log(edad);
-const usuario= {id: 1, nickname:"ElBarto"}
-const usuarioEnJSON= JSON.stringify(usuario)
+const usuario = { id: 1, nickname: "ElBarto" };
+const usuarioEnJSON = JSON.stringify(usuario);
 
-localStorage.setItem("user", usuarioEnJSON)
+localStorage.setItem("user", usuarioEnJSON);
 
 const usuarioLS = JSON.parse(localStorage.getItem("user"));
-console.log(usuarioLS);
-console.log(usuarioLS.id);
-console.log(usuarioLS.nickname);
+// console.log(usuarioLS);
+// console.log(usuarioLS.id);
+// console.log(usuarioLS.nickname);
 //JSON (stringify) (parse)
+// console.log(form);
+
+//trabajamos con el form
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const inputsForm = event.target;
+  const user = inputsForm[0];
+  const pass = inputsForm[1];
+  const check = inputsForm[2];
+  const usuarioGuardado = { user: user.value, pass: pass.value };
+
+  if (check.checked) {
+    localStorage.setItem("USUARIO", JSON.stringify(usuarioGuardado));
+  } else {
+    sessionStorage.setItem("USUARIO", JSON.stringify(usuarioGuardado));
+  }
+
+  console.log(usuarioGuardado);
+});
+
 
