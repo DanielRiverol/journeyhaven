@@ -2,12 +2,13 @@ const contenedor = document.querySelector("#contenedor");
 const inputs = document.querySelectorAll("input");
 const p = document.querySelector("#message");
 const form = document.querySelector("#form-login");
-
+const listado= document.getElementById('listado')
 //variables auxiliares para acceder a los inputs por separado
 const inputUser = inputs[0];
 const inputPass = inputs[1];
 const check = inputs[2];
 const btnIngresar = inputs[3];
+
 
 const servicios = [
   { id: 1, nombre: "limpieza de cutis", precio: 1200, img: "limpieza.jpg" },
@@ -31,7 +32,18 @@ const servicios = [
     stock: 2,
   },
 ];
-
+const paises = [
+  "Argentina",
+  "Colombia",
+  "Brasil",
+  "México",
+  "Uruguay",
+  "Venezuela",
+  "Perú",
+  "Chile",
+  "Polonia",
+  "Canada",
+];
 //Funciones de búsqueda
 function buscarServicio(arr, filtro) {
   const encontrado = arr.find((el) => {
@@ -66,3 +78,5 @@ function crearHtml(arr) {
   }
 }
 
+console.log(servicios);
+console.log(paises);
