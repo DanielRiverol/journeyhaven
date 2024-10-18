@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css"
+      type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Filtrar Productos</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Lista de Productos</h1>
+
+      <!-- Campo de entrada para filtrar productos -->
+      <div class="form-container">
+        <form>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Buscar producto..." />
+          <button id="search-btn">Buscar</button>
+        </form>
+      </div>
+
+      <!-- Lista donde se mostrarán los productos -->
+      <ul id="product-list">
+        <!-- Los productos se generarán dinámicamente desde JavaScript -->
+      </ul>
+    </div>
+
+    <script src="js/products.js"></script>
+  </body>
+</html>

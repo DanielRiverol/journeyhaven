@@ -116,16 +116,78 @@ const devolverCampera = (response) => {
       } else {
         reject("Uh no la perdí");
       }
-    });
-  }, 2500);
+    }, 2500);
+  });
 };
 
-console.log("Hola Xabi te acordas la campera que te presté");
-const respuesta = devolverCampera("...")
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((err) => {
-    console.log(err);
+// console.log("Hola Xabi te acordas la campera que te presté");
+// const respuesta = devolverCampera("si")
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+//   console.log("Resto de los procesos");
+const renderServicios = (arr) => {
+  contenedor.innerHTML = "";
+  let html;
+  for (const item of arr) {
+    const { id, nombre, img, precio } = item; //destructuring
+    html = `
+        <div class="card">
+      		<div class="card-image">
+        	<img src="../img/${img}">
+        	<span class="card-title">${nombre.toUpperCase()}</span>
+       </div>
+     	 <div class="card-content"> 
+     		<p>$${precio}</p>
+      </div>
+      <div class="card-action">
+        <button class="btn btn-normal" id="${id}">Comprar</button>
+      </div>
+     </div>
+     `;
+    contenedor.innerHTML += html;
+  }
+};
+const pedirServicios = (arr) => {
+  //Instanciar promesa
+  contenedor.innerHTML = "Cargando... ⏱️";
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (arr) {
+        resolve(arr);
+      } else {
+        reject("error de datos");
+      }
+    }, 2500);
   });
-// console.log("Dale gracias");
+};
+let datos = [];
+// pedirServicios(servicios).then((response) => {
+//   datos = response;
+//   console.log(datos);
+//   // contenedor.innerHTML = "";
+//   renderServicios(datos);
+// });
+
+// DESTRUCTURING
+const personaje = {
+  primer_nombre: "Homero",
+  segundo_nombre: "Jay",
+  apellido: "Simpson",
+  edad: 38,
+};
+
+// console.log(personaje.primer_nombre);
+// console.log(personaje.segundo_nombre);
+// console.log(personaje.apellido);
+// const primer_nombre = personaje.primer_nombre;
+// const segundo_nombre = personaje.segundo_nombre;
+// console.log(primer_nombre);
+const { primer_nombre, segundo_nombre, apellido } = personaje;
+
+console.log(primer_nombre);
+console.log(segundo_nombre);

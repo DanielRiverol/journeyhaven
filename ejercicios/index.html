@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css"
+      type="text/css" />
+      <link rel="stylesheet" href="css/style.css">
+
+    <title>Simulador de Encuesta</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <h1>¿Cuál es tu lenguaje de programación favorito?</h1>
+
+    <form id="quiz-form">
+      <label>
+        <input type="radio" name="language" value="JavaScript" />
+        JavaScript </label
+      ><br />
+      <label>
+        <input type="radio" name="language" value="Python" /> Python </label
+      ><br />
+      <label> <input type="radio" name="language" value="Java" /> Java </label
+      ><br />
+      <label> <input type="radio" name="language" value="C#" /> C# </label
+      ><br />
+      <label> <input type="radio" name="language" value="Ruby" /> Ruby </label
+      ><br /><br />
+      <button type="button" id="submit-btn">Enviar</button>
+    </form>
+
+    <h2>Resultados:</h2>
+    <ul id="results">
+      <li>JavaScript: 0</li>
+      <li>Python: 0</li>
+      <li>Java: 0</li>
+      <li>C#: 0</li>
+      <li>Ruby: 0</li>
+    </ul>
+
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
